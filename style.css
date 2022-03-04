@@ -14,15 +14,8 @@
     --very-dark-blue: 234, 12%, 34%;
     --grayish-blue: 229, 6%, 66%;
     --very-light-gray: 0, 0%, 98%;
-    font-size: clamp(12px, 11.25px + 1vw , 15px);
+    font-size: 15px;
 }
-body{
-    background-position: center;
-    background-blend-mode: darken;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: inherit;
-} 
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -58,17 +51,17 @@ main {
 
 .hero-sec__title--main h1 {
     font-weight: 600;
-    font-size: 1.35rem;
+    font-size: 1.6rem;
 }
 
 .hero-sec__title--sub {
     margin: 12px 0 0;
-    font-size: 0.85em;
+    font-size: 1rem;
     max-inline-size: 32ch;
 }
 
 .feature-sec {
-    margin-top: 2.25em;
+    margin-top: 4.25em;
     display: grid;
     place-content: center;
     gap: 1.35em;
@@ -81,14 +74,16 @@ main {
 }
 
 .card {
-    min-width: 250px;
-    max-width: 275px;
-    padding: 0px 10px;
+    min-width: 315px;
+    max-width: 325px;
+    padding: 20px 32px;
+    min-height: 220px;
+
+    border-top: 6px;
+    box-shadow: 5px 10px 15px hsla(var(--blue), 15%);
+    border-radius: 10px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    box-shadow: 0px 5px 5px hsla(var(--blue), 15%);
-    padding: 10px 10px;
-    min-height: 200px;
  
 }
 
@@ -98,7 +93,7 @@ main {
 
 .card p{
     flex: 1;
-    font-size: 0.75em;
+    font-size: 1rem;
     max-inline-size: 32ch;
 }
 
@@ -133,7 +128,7 @@ main {
 
 @media screen and (min-width:680px) {
     :root{
-        font-size: clamp(14px, 8.2px + 1vw , 15px);
+        font-size: 15px;
     }
     .feature-sec {
         margin-top: 0.5em;
@@ -149,11 +144,13 @@ main {
     }
 
     .hero-sec__title--main h1 {
+        font-size: 2.4rem;
         font-weight: 600;
-        font-size: 2.15em;
         line-height: 1.4;
     }
     .hero-sec__title--sub {
+        font-size: 1.05rem;
+        line-height: 1.6;
         max-inline-size: 55ch;
         text-align: center;
         padding: 1rem 0;
@@ -171,16 +168,17 @@ main {
     }
 
     .card h2{
-        font-size: 1.2rem;
-    }
+        font-size: 1.3rem;    }
 
     .card p{
-        font-size: 0.75em;
         max-inline-size: 32ch;
+        font-size: 0.9rem;
     }
 } 
 
-@media screen and (min-width:1050px) {
+/* beyond iPad landscape sizes */
+@media screen and (min-width:1081px) {
+   
     .hero-sec {
         padding: 3.5em 0rem 2.5em;
         margin: 0 auto;
@@ -188,9 +186,9 @@ main {
     }
 
     .card {
-        min-width: 305px;
-        min-height: 220px;
-        padding: 20px;
+        min-width: 350px;
+        min-height: 250px;
+        padding: 25px;
     }
 
     .feature-sec {
