@@ -41,6 +41,7 @@ main {
 
 .hero-sec {
     padding: 3.5em 0rem 2.5em;
+    /* padding: 10px 0rem 40px; */
     text-align: center;
 }
 
@@ -84,8 +85,14 @@ main {
     border-radius: 10px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
- 
+
+    text-decoration: none;
+    color: inherit;
+
 }
+
+
+
 
 .card h2{
     font-size: 1.2rem;
@@ -124,7 +131,10 @@ main {
     background: hsla(var(--blue), 5%);
     transform: scale(1.005);
 }
-
+.card:active{
+    box-shadow: 0px 5px 5px hsla(var(--very-dark-blue), 25%);
+    transform: scale(0.98);
+}
 
 @media screen and (min-width:680px) {
     :root{
@@ -157,10 +167,6 @@ main {
         margin: 0 auto;
     }
 
-    .card{
-        min-height: 225px;
-    }
-  
     .card {
         min-width: 305px;
         min-height: 220px;
@@ -180,7 +186,7 @@ main {
 @media screen and (min-width:1081px) {
    
     .hero-sec {
-        padding: 3.5em 0rem 2.5em;
+        padding: 10px 0rem 40px;
         margin: 0 auto;
         text-align: center;
     }
@@ -188,7 +194,7 @@ main {
     .card {
         min-width: 350px;
         min-height: 250px;
-        padding: 25px;
+        padding: 30px;
     }
 
     .feature-sec {
