@@ -41,7 +41,6 @@ main {
 
 .hero-sec {
     padding: 3.5em 0rem 2.5em;
-    /* padding: 10px 0rem 40px; */
     text-align: center;
 }
 
@@ -91,9 +90,6 @@ main {
 
 }
 
-
-
-
 .card h2{
     font-size: 1.2rem;
 }
@@ -103,7 +99,6 @@ main {
     font-size: 1rem;
     max-inline-size: 32ch;
 }
-
 
 .card .card-logo{
     align-self: end;
@@ -148,7 +143,7 @@ main {
         gap: 1.75em;
     }
     .hero-sec {
-        padding: 3.5em 0rem 2.5em;
+        padding: 4.3em 0rem 3em;
         margin: 0 auto;
         text-align: center;
     }
@@ -157,13 +152,14 @@ main {
         font-size: 2.4rem;
         font-weight: 600;
         line-height: 1.4;
+        
     }
     .hero-sec__title--sub {
-        font-size: 1.05rem;
+        font-size: 1.0rem;
+        padding: 1em 0;
         line-height: 1.6;
         max-inline-size: 55ch;
         text-align: center;
-        padding: 1rem 0;
         margin: 0 auto;
     }
 
@@ -186,7 +182,7 @@ main {
 @media screen and (min-width:1081px) {
    
     .hero-sec {
-        padding: 10px 0rem 40px;
+        padding: 4.3em 0rem 3em;
         margin: 0 auto;
         text-align: center;
     }
